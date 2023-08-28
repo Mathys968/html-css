@@ -1,0 +1,8 @@
+@charset "UTF-8";
+* { /*Configurações globais das CSS*/
+height:80% ;    
+}
+body{
+background-image: linear-gradient(to right, 
+white, #A9CAFF);
+}

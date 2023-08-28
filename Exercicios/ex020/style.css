@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+background-image: linear-gradient(to right, white, rgb(151, 191, 218));
+}
+
+div{
+border: 1px solid rgb(150, 223, 199);
+background-color: bisque;
+}
+
+main{
+    background-color: aliceblue;
+}
+
+p{
+    height: 100px;
+    width: 100px;
+}
+

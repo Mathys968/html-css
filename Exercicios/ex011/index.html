@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      audio{
+background-color: black;
+
+      }
+    </style>
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente acessar esse site em vários tamanhos diferentes</p>
+
+  <picture>
+    <source media="(max-width: 750px)" srcset="IMGS/P.png" 
+    type="image/png">
+    <source media="(max-width: 1250px)" srcset="IMGS/m.png" 
+    type="image/png">
+    <img src="IMGS/FG.png" alt="imagem flexível">
+    
+    <h1>Reproduzindo Aúdio</h1>
+    <p>Podemos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/neffex.mp3" controls autoplay></audio>
+    <!--Formatos>>> MP3 WAV OGG-->
+
+    <audio preload="metadata" controls loop>
+      <source src="midia/neffex.mp3" type="audio/mpeg">
+      <source src="midia/neffex.mp3" type="audio/ogg">
+      <source src="midia/neffex.mp3" type="audio/wav">
+      <p>Infelismente seu navegador não consegue reproduzir áudio. <a href="midia/neffex.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+      
+    </audio>
+</body>
+</html>
