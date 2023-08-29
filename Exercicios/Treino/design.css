@@ -76,10 +76,9 @@ ul{
 .op:hover > .link{
     display: block;
 }
-    div > .foto{
+.foto{
         box-shadow: 5px 5px 10px black;
 padding: 4em;
-opacity: calc(100%);
 margin: auto;
     }
     
