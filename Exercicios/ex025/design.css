@@ -1,22 +1,31 @@
 @charset "UTF-8";
 
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: cursive;
+    --fonte3: cursive;
+}
+
 * {
     margin:0px;
     padding: 0px;
 }
 
 html body{
+    font-family: var(--fonte1);
     background-color: darkgray;
     min-height: 100vh;
 }
 
 header{
-    background-color: black;
+    background-color: rgb(65, 62, 62);
     color:white;
     text-align: center;
 }
 
 header > h1 {
+    font-size: 5vw;
+    font-family: var(--fonte2);
     padding-top: 50px;
     font-variant: small-caps;
 }
@@ -36,26 +45,33 @@ a:hover{
 }
 
 section{
+    font-family: var(--fonte3);
 padding-top: 10vh;
 padding-bottom: 10vh;
 line-height: 2em;
 padding-left: 30px;
+font-size: 2vw;
+}
+
+section > p{
+    padding-bottom: 1em;
 }
 
 .normal{
-    background-color: white;
+    background-color: rgba(246, 245, 248, 0.753);
     color: black;
 }
 
 .imagem{
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(236, 133, 133);
     color: white;
 
 }
 
 .imagem > p{
     background-color: rgba(0, 0, 0, 0.192);
-    width: 400px;
+display: inline-block;
+padding: 10px;
 }
 
 footer{
