@@ -8,6 +8,7 @@
         table{
 width: 500px;
 border-collapse: collapse;
+position: relative;
         }
 
         td, th{
@@ -20,16 +21,27 @@ border: 1px solid black;
             background-color: gray;
         }
 
+thead > tr > th {
+    position: sticky;
+    background-color: gray;
+    top: -1px;
+}
+
+        tbody > tr:nth-child(1n){
+background-color: rgb(197, 197, 211);
+        }
+
     </style>
 </head>
 <body>
+ 
   <h1>Tabelas grandes</h1>
   
   <table>
 <thead>
 <tr>
-    <th>Estado</th>
-    <th>População</th>
+    <th scope="col">Estado</th>
+    <th scope="col">População</th>
 </tr>
 </thead>
 <tbody>
@@ -40,10 +52,12 @@ border: 1px solid black;
 </tbody>
 <tfoot>
     <tr>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td>0000</td>
     </tr>
 </tfoot>
+<caption>Sono
+</caption>
 </table>  
 </body>
 </html>
