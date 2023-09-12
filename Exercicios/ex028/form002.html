@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+        <h1>Teste com formulário</h1>
+        <form action="dados.php" method="post" autocomplete="off">
+
+        
+        <p>
+            <Label for="ilusu">Usuário</Label>
+            <input type="text" name="lusu" id="ilusu" required minlength="8" maxlength="15" size="10" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="2" maxlenght="10" autocomplete="current-password">
+        </p>
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
