@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsds</title>
+</head>
+<body>
+    <h1>Siono</h1>
+    <fieldset>
+        <form action="dados.php" method="get" autocomplete="on">
+        <p>
+        <label for="iemail">E-mail</label>
+        <input type="email" name="email" id="iemail" required autocomplete="email">
+        </p>
+        <p>
+        <label for="intel">Telefone:</label>
+        <input type="tel" name="tel" id="intel" autocomplete="tel" required pattern="^[0-9]{9}$">
+        </p>
+    </fieldset>
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+    </form>
+</body>
+</html>
