@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
-    
+<h1>Exemplo de Formulario</h1>
+<form action="dados.php" method="get" autocomplete="on">
+    <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <optgroup label="Região Sudeste">
+                <option value="">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="DF" selected>Distrito Federal</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="MA">Maranhão</option>
+            </optgroup>
+        </select>
+    </p>
+
+<p>
+    <label for="iprof">Profissão: </label>
+    <input type="text" name="prof" id="iprof" list="listrof" required>
+    <datalist id="listrof">
+        
+                <option value="MG">Minas Gerais</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="MA">Maranhão</option>
+    </datalist>
+</p>
+
+<p>
+    <label for="imsg">Mensagens: </label>
+    tex
+</p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>    
 </body>
 </html>
