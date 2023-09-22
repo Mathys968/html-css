@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*Todas as demais Medias*/
+/*Tamanhos de tela comuns:
+Phone: 360 x 640
+Phone: 375 x 667
+Phone: 360 x 720
+iPhoneX: 375x812
+Pixel 2: 411x731
+Tablet: 768 x 1024
+Computador portátil: 1366 x 768
+Laptop ou desktop de alta resolução: 1920 x 1080*/
+
+/*
+576px para telefones retrato
+768px para tablets
+992px para notebooks
+1200px para dispositivos grandes
+*/
+/*Typical Device Breakpoint*/
+
+@media print {
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+#phone{display: none;}
+#tablet{display: block;}
+#imp{display:none;}
+#pc{display: none;}
+#tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+#phone{display: none;}
+#tablet{display: none;}
+#imp{display:none;}
+#pc{display: block;}
+#tv{display: none;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+
+#phone{display: none;}
+#tablet{display: none;}
+#imp{display:none;}
+#pc{display: none;}
+#tv{display: block;}
+}
