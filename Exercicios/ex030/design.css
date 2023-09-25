@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(169, 170, 243);
+}
+
+header{
+    background-color: rgba(83, 109, 228, 0.795);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+    padding-bottom: 5px;
+}
+
+#burguer{
+    background-color: gray;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+menu{
+    display: none;
+}
+
+
+li{
+    list-style-type: none;
+    text-align: center;
+}
+
+a{
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(209, 211, 208);
+    text-decoration: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
+    border-top: 2px solid gray;
+}
+
+div a:hover{
+    padding: 7px;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+p{
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
