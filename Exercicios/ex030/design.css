@@ -13,7 +13,7 @@ body{
 header{
     background-color: rgba(83, 109, 228, 0.795);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 
 #burguer{
