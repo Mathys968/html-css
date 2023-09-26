@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(34, 34, 34), rgb(107, 150, 207));
+    background-repeat: no-repeat;
+}
+
+header > #imagem{
+  background: rgba(24, 24, 24, 0.658)  url(../ex025/imagens/background002.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 50vw;
+    height:150px;
+    border-radius:10px 10px 0px 0px;
+}
+
+main{
+    background-color: white;
+   width: 50vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-justify: auto;
+}
+
+span{
+    color: white;
+}
+
+p{
+    background-color: rgb(235, 232, 229);
+    border-radius: 5px;
+}
+
+label{
+    border-radius: 5px;
+}
+
+input{
+    background-color: rgb(223, 161, 161);
+    border-radius: 5px;
+    width: 200px;
+    align-self: auto;
+}
