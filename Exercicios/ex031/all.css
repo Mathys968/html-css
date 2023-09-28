@@ -19,15 +19,14 @@ body{
 #imagem{
     background: #181818a8  url(../ex025/imagens/background002.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    width: 90vw;
+    width: 80vw;
     height:150px;
     border-radius:10px 10px 0px 0px;
 }
 
 main{
   background-color: white;
-    width: 90vw;
+    width: 80vw;
     height: 80vh;
     margin: auto;
     margin-top: 50px;
