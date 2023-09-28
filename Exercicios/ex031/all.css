@@ -12,24 +12,21 @@ html{
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(34, 34, 34), rgb(107, 150, 207));
+    background-color: #b9b9f3;
     background-repeat: no-repeat;
 }
 
-header > #imagem{
-  background: rgba(24, 24, 24, 0.658)  url(../ex025/imagens/background002.jpg);
+#imagem{
+    background: #181818a8  url(../ex025/imagens/background002.jpg);
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     width: 50vw;
     height:150px;
     border-radius:10px 10px 0px 0px;
 }
 
 main{
-    background-color: white;
-   width: 50vw;
+  background-color: white;
+    width: 50vw;
     height: 80vh;
     margin: auto;
     margin-top: 50px;
@@ -37,12 +34,16 @@ main{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
 }
 
-h1{
-    text-align: center;
-}
-
-p{
+h1, p{
+    display: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
     text-justify: auto;
+    text-align: center;
+    display: block;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function:ease;
 }
 
 span{

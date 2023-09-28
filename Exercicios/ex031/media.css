@@ -1,9 +1,50 @@
 @charset "UTF-8";
 
-@media screen and(min-width: 768px) and (max-width:992px){
-    main{
-     width: 90vw; 
-        background-color: black;  
+@media screen and (min-width: 768px) and (max-width:1024px){
+  
+body{
+    background-image:linear-gradient(to top, rgb(240, 240, 240), #b9b9f3);
+}
+
+    h1, p{
+       width: 70%;
+       float: right;
     }
 
+    main{
+        width: 70vw;
+    }
+
+    #imagem{
+        height: 80vh;
+        width: 30%;
+        float: left;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+
+    body{
+        background-image:linear-gradient(to top, rgb(240, 240, 240), #b9b9f3);
+    }
+
+    h1, p{
+        width: 50%;
+        float:right
+    }
+
+    #imagem{
+        height: 80vh;
+        width: 50%;
+        float: left;
+        border-radius: 10px 0px 0px 10px;
+    }
+ 
+    main{
+        width: 80vw;
+    }
 }
