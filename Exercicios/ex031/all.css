@@ -19,14 +19,14 @@ body{
 #imagem{
     background: #181818a8  url(../ex025/imagens/background002.jpg);
     background-size: cover;
-    width: 80vw;
+    width: 60vw;
     height:150px;
     border-radius:10px 10px 0px 0px;
 }
 
 main{
   background-color: white;
-    width: 80vw;
+    width: 60vw;
     height: 80vh;
     margin: auto;
     margin-top: 50px;
@@ -47,21 +47,16 @@ h1, p{
 }
 
 span{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 p{
-    background-color: rgb(235, 232, 229);
+    margin-left: 10px;
     border-radius: 5px;
+    text-align: left;
 }
 
 label{
     border-radius: 5px;
 }
 
-input{
-    background-color: rgb(223, 161, 161);
-    border-radius: 5px;
-    width: 200px;
-    align-self: auto;
-}
