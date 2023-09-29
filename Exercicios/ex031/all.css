@@ -16,23 +16,25 @@ body{
     background-repeat: no-repeat;
 }
 
-#imagem{
+
+header{
     background: #181818a8  url(../ex025/imagens/background002.jpg);
     background-size: cover;
-    width: 70vw;
+    width: 100%;
     height:150px;
     border-radius:10px 10px 0px 0px;
 }
 
 main{
   background-color: white;
-    width: 70vw;
-    height: 80vh;
+    width: 60vw;
+    height: 85vh;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
 }
+
 
 h1, p{
     display: absolute;
@@ -56,6 +58,56 @@ p{
     text-align: left;
 }
 
-label{
+form > div.campo{
+    background-color: #b9b9f3;
+    width: 90%;
     border-radius: 5px;
+    margin: 5px 0px;
+    height: 40px;
+    margin: auto;
+}
+
+
+
+input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 90%;
+    height:40px;
+    margin: auto;
+    background-color: rgb(56, 78, 78);
+border-radius: 5px;
+border: 1px solid;
+}
+
+div.campo > label{
+    display: none;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(77, 124, 124);
+    cursor: pointer;
+}
+
+a{
+   text-decoration: none; 
+   color: rgb(10, 12, 12);
+}
+
+form > .botao{
+    
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    font-size:1em;
+    width: 90%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 5px;
+    
+}
+
+form > .botao:hover{
+    background-color: rgb(156, 243, 243);
 }

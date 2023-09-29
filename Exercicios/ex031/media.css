@@ -17,18 +17,22 @@ body{
         width: 70vw;
     }
 
-    #imagem{
+    header{
         height: 80vh;
         width: 30%;
         float: left;
         border-radius: 10px 0px 0px 10px;
-        background-attachment: fixed;
     }
 
-
+    input[type=submit] {
+        width: 60%;
+    }
     
+   form > .botao{
+    width: 60%;
+    margin-left:35%;
 }
-
+}
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
 
     body{
@@ -49,15 +53,23 @@ body{
         font-size: 1.5em;
     }
     
-    #imagem{
+   header{
         height: 80vh;
         width: 50%;
         float: right;
         border-radius: 0px 10px 10px 0px;
-        background-attachment: fixed;
-    }
+       }
  
     main{
-        width: 80vw;
+        width: 90vw;
+    }
+
+    input[type=submit] {
+        width: 40%;
+    }
+ 
+    form > .botao{
+        width: 40%;
+        margin-left: 5%;
     }
 }
