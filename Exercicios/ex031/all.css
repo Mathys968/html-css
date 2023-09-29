@@ -60,6 +60,7 @@ p{
 
 form > div.campo{
     background-color: #b9b9f3;
+    border: 2px solid #b9b9f3;
     width: 90%;
     border-radius: 5px;
     margin: 5px 0px;
@@ -75,13 +76,30 @@ input[type=submit]{
     width: 90%;
     height:40px;
     margin: auto;
-    background-color: rgb(56, 78, 78);
+    background-color: rgb(189, 245, 245);
 border-radius: 5px;
 border: 1px solid;
 }
 
 div.campo > label{
     display: none;
+}
+
+div.campo > input{
+    background-color:  rgb(181, 231, 231);
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 55px);
+    border: 0px;
+    border-radius: 5px;
+    transform: translateY(-12px);
+}
+
+div.campo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
 input[type=submit]:hover{
