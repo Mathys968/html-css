@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(100, 7, 38);
+}
+
+
+@keyframes animacao{
+    0%{width: 50%;
+    margin: left;}
+    100%{width: 90%;
+    margin: auto;}
+}
+
+h1{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgba(255, 255, 255, 0.849);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.418);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.219);
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    font-size: 25px;
+}
+
+h1:active{
+    transform: scale(0.96);
+   cursor: pointer;
+}
+
+.t{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+}
+
+p{
+    border-radius: 20px;
+}
+
+
+#test{
+    background-color: chartreuse;
+    background-image: url(../ex012/transferir\ \(1\).png);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+
+#test > p{
+    display: none;
+}
+
+#test:hover > p{
+    display: block;
+    background-color: white;
+    width: 100vw;
+}
