@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 *{
-    padding: 5px;
-    margin: 5px;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -40,10 +40,13 @@ h1:active{
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
+    margin-left: 50px;
 }
 
 p{
     border-radius: 20px;
+    margin: 50px;
+    padding: 20px;
 }
 
 
@@ -64,5 +67,5 @@ p{
 #test:hover > p{
     display: block;
     background-color: white;
-    width: 100vw;
+    width: 300px;
 }
