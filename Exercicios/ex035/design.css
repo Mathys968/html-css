@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*
 @keyframes animation{
 
     5%{width: 100px;
@@ -39,4 +39,49 @@ background-color: rgb(236, 146, 146);}
     animation-name: animation;
     animation-delay: 2s;
     transform: rotate(animation);
+}
+*/
+/* TAG TRANSFORM
+#container{
+    background-color: rgb(172, 172, 228);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 3px solid red;
+    outline: 3px solid violet;
+    transform: ;
+}
+*/
+/* transiton
+#container{
+    background-color: rgb(172, 172, 228);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 3px solid red;
+    transition-property:background-color, border-radius;
+    transition-duration: 2s;
+    transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#container:hover{
+    background-color: red;
+    border-radius: 50%;
+    animation
+}
+*/
+
+
+@keyframes fly{
+ 100%{transform: translateX(calc(100vw - 200px));}
+}
+
+#container{
+ width: 100px;
+ height: 100px;
+ background-color: blueviolet;
+ animation-name: fly;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+ animation-timing-function: cubic-bezier(2, 0.23, 0.165, 0.2);
 }
