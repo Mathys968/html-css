@@ -7,52 +7,70 @@
 }
 
 body{
-    background-color: rgb(100, 7, 38);
+    background-image: url(mulheres-ai-generativas-protestando-gritando_108985-2515.avif);
+  background-attachment: fixed;
 }
 
-
+/*
 @keyframes animacao{
     0%{width: 50%;
     margin: left;}
     100%{width: 90%;
     margin: auto;}
 }
+*/
+
 
 h1{
-    width: 90%;
     text-align: center;
-    margin: auto;
-    border: 2px solid rgba(255, 255, 255, 0.849);
+    font-size: 50px;
+    margin-top: 30%;
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.418);
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.219);
+    /*
     animation-name: animacao;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    font-size: 25px;
+    */
 }
-
+/*
 h1:active{
     transform: scale(0.96);
    cursor: pointer;
+}
+*/
+
+.ent{
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+}
+
+h2{
+    background-color: #92B4F4;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 
 .t{
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
-    margin-left: 50px;
+    margin-left: 45px;
 }
+
 
 p{
     border-radius: 20px;
     margin: 50px;
     padding: 20px;
+    text-indent: 20px;
 }
 
 
-#test{
+.test{
     background-color: chartreuse;
-    background-image: url(../ex012/transferir\ \(1\).png);
+    background-image: url(transferir.jpg);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -60,18 +78,19 @@ p{
 }
 
 
-#test > p{
+.test > p{
     display: none;
 }
 
-#test:hover > p{
+.test:hover > p{
     display: block;
-    background-color: white;
+    background-color: #ffffff;
     width: 300px;
 }
 
 
 img{
-    width: 100px;
+    
+    width: 300px;
     height: 100px;
 }
