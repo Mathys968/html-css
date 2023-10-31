@@ -79,7 +79,8 @@ p{
 
 .test{
     background-color: chartreuse;
-    background-image: url(transferir.jpg);
+    background-image: url(images.jpg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.521);
     width: 200px;
     height: 200px;
     border-radius: 50%;

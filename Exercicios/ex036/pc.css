@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px) and (max-width:20000px){
+@media screen and (min-width:768px) and (max-width:30000px){
 
 
 
@@ -46,9 +46,10 @@
    }
 
    .Maria > p{
-    margin-left: 213px;
+    margin-left: 223px;
     margin-top: 10px;
     width: 1020px;
+    border-radius: 0px;
    }
 
 
@@ -87,6 +88,14 @@
       color: white;
    }
 
+   .item2{
+      color: white;
+   }
+
+   .item3{
+      color: white;
+   }
+
    p{
     width: 500px;
    }
@@ -106,6 +115,11 @@
 
    .m{
       background-color: chartreuse;
+      background-image: url(Mexico_ante_el_nuevo_orden_economico_y_su_impacto_en_el_contexto-e1614876170513.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -122,11 +136,20 @@
       width: 500px;
       margin-left: -150px;
       margin-top: 200px;
-     
+     }
+
+     img{
+      margin-left: 100px;
+     }
+
+     a{
+      margin-left: 100px;
      }
 
    .a{
          background-color: chartreuse;
+         background-image: url(transferir\ \(5\).jpg);
+         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
          width: 200px;
          height: 200px;
          border-radius: 50%;
@@ -137,9 +160,16 @@
       display: none;
    }
 
+   .a:hover > p{
+      display: block;
+      background-color: white;
+      width: 500px;
+      margin-left: -300px;
+      margin-top: 200px;
+   }
    footer{
     width: 1vw;
-    height: 500px;
+    height: 1000px;
     background-color: #EFD6AC;
    }
 }
