@@ -177,4 +177,13 @@
     background-color: white;
     margin-top: 0.1px;
    }
+   
+   footer > p{
+      margin-top: 0.1px;
+      color: white;
+}
+
+abbr{
+   text-decoration: underline;
+}
 }
