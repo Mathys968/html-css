@@ -22,41 +22,38 @@
    }
 
    .ent{
-    width: 500px;
+    width: 520px;
     margin: auto;
     margin-top: 10px;
    }
 
- a{
-    text-decoration: none;
-    color: rgb(0, 140, 255);
- }
-
-a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .Maria{
     width: 100%;
-    height: 200px;
-    height: 200px;
+    height: 270px;
+    margin-top: -20px;
     background: #EFD6AC url(transferir\ \(1\).jpg) no-repeat;
+    background-size: contain;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
    }
 
+
    .Maria > h2{
-    margin-left: 200px;
-    background-color: #EF2D56;
-    font-size: small;
-    box-shadow: 0px 0px 0px white;
+    margin-left: 223px;
+    background-color: #BA6E6E;
+    font-size: large;
+    box-shadow: 2px 2px 2px rgba(3, 3, 3, 0.144);  
+    width: 250px;
    }
 
    .Maria > p{
-    margin-left: 200px;
-    margin-top: 25px;
+    margin-left: 213px;
+    margin-top: 10px;
+    width: 1020px;
    }
 
+
    .ideias > h2{
+    margin-top: 100px;
     background-color: #CFDEE7;
     box-shadow: 2px 2px 2px black;
    }
@@ -70,31 +67,79 @@ a:hover{
 
    h2{
     margin-top: 75px;
-    width: 200px;
+    width: 415px;
     padding: 10px;
     padding-left: 20px;
    }
 
+   h3{
+      margin-top: 75px;
+      width: 415px;
+      padding: 10px;
+      padding-left: 20px;
+     }
 
-   .test{
-    width: 200px;
-    height: 200px;
+   .titulos{
+      border: 1px solid black;
    }
    
+   .item1{
+      color: white;
+   }
+
    p{
     width: 500px;
    }
 
+   #containerT{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
    .test:hover > p{ 
     width: 500px;
-    margin-left: 210px;
-    margin-top: -30px;
+    margin-left: -150px;
+    margin-top: 200px;
    
    }
 
+   .m{
+      background-color: chartreuse;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 10px;
+   }
+
+   .m > p{
+      display: none;
+      background-color: white;
+   }
+   
+   .m:hover > p{ 
+      display: block;
+      width: 500px;
+      margin-left: -150px;
+      margin-top: 200px;
+     
+     }
+
+   .a{
+         background-color: chartreuse;
+         width: 200px;
+         height: 200px;
+         border-radius: 50%;
+         margin-top: 10px;
+   }
+
+   .a > p{
+      display: none;
+   }
+
    footer{
-    width: 0vw;
-    height: 0px;
+    width: 1vw;
+    height: 500px;
     background-color: #EFD6AC;
    }
 }
