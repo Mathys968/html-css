@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos de JavaScript</title>
+    <style>
+@keyframes animation{
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: brown;
+    }
+    100%{
+        background-color: chartreuse;
+    }
+}
+
+        h1{
+            background-color: blueviolet;
+            color: white;
+            animation-name: animation;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            cursor: pointer;
+        }
+        h1:active{
+            transform: scale(0.90);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>"Hello, Word!"</h1>
+        <p>Me livrei da maldição!</p>
+    </header>
+    
+    <script>
+        //Códigos base de Alerta, Confirmação e Pergunta
+        window.alert('Minha primeria mensagem');
+       window.confirm('Está gostando de JavaScript?');
+        window.prompt('Qual é o seu nome?');
+    </script>
+</body>
+</html>
