@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan design</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: cursive;
+        }
+
+        body{
+            background:black;
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+        }
+
+           .img{
+               display: flex;
+               justify-content: center;
+               margin-top: 10%;
+            }
+
+            @keyframes ani{
+
+                0%{
+                    transform: translate(0px, 0px);
+                }
+
+              25%{
+                transform: translate(100px) rotate(90deg);
+              }
+              50%{
+                transform:translate(100px, -200px) ;
+              }
+              75%{
+                transform:translate(-100px, -200px) ;
+              }
+              100%{
+                transform:translate(-100px)  rotate(90deg);
+              }
+            }
+
+            p{
+                color: white;
+                text-align: center;
+                animation-name: ani;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                transform: rotate3d(100%);
+                animation-direction: alternate;
+            }
+    </style>
+</head>
+<body>
+    <h1>Train</h1>
+    <div class="img">
+        
+        <img src="images (1).jpg" alt="Omori">
+    </div>
+
+    <div>
+        <div>
+            <p>Omori</p>
+            <p>Sunny</p>
+            <p>Omori</p>
+            <p>Sunny</p>
+
+            <p>Omori</p>
+            <p>Sunny</p>
+            <p>Omori</p>
+            <p>Sunny</p>
+
+
+            <p>Omori</p>
+            <p>Sunny</p>
+            <p>Omori</p>
+            <p>Sunny</p>
+            <p>Omori</p>
+            <p>Sunny</p>
+        </div>
+    </div>
+
+    <script>
+        var nome = window.prompt('Digite seu nome: ')
+        window.alert(`Bem-vindo, ${nome}`)
+        var idade = window.prompt('Qual a sua idade?')
+        window.confirm('Você confirma sua idade?')
+        window.alert(`Você definiu seu nome como: ${nome.toUpperCase(nome)}, e com a idade: ${idade}. Seu nome tem ${nome.length} letras`)
+    </script>
+    
+</body>
+</html>
