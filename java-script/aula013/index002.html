@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Dom</title>
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    body{
+        background-image: linear-gradient(to right,
+    rgba(153, 149, 149, 0.555), rgba(98, 98, 248, 0.493));
+    }
+
+    #area{
+        background-color: antiquewhite;
+        width: 400px;
+        height: 400px;
+        line-height: 350px;
+        text-align: center;
+        color: white;
+        margin: 25% auto;
+    }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <h1>Eventtooooooooo</h1>
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            var a = document.getElementById('area')
+            a.innerText = 'Clicou!'
+            a.style.color = 'black'
+        }
+
+        function entrar(){
+            var a = document.getElementById('area')
+            a.innerText = 'Ihhh, passou mesmo em!!'
+        }
+
+        function sair(){
+            var a = document.getElementById('area')
+            a.innerText = 'Ihhh, saiu porque?'
+        }
+    </script>
+</body>
+</html>

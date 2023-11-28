@@ -25,11 +25,16 @@
     </header>
 
     <script>
-        var p1 = window.document.getElementsByTagName('h1')[0]
-        window.document.write('Está escrito assim: ' + p1.innerHTML)
+       /* var p1 = window.document.getElementsByTagName('p')[0]
+        document.write('Olha oque tem escrito no h1: ' + p1.innerText)*/
 
        /* var id = document.getElementById('msg')
         id.style.color = 'green'*/
+
+        var n1 = window.prompt('Digite um número:')
+        var n2 = window.prompt('Digite outro número:')       
+        var isoma = Number.parseInt(n1) + Number.parseInt(n2)
+        document.write('A soma de ambos será: ' + isoma)
 
         
     </script>
