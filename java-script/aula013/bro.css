@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Stolen';
+    src: url(StolenTimes_PERSONAL_USE_ONLY.otf) format('OpenType');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: lightblue;
+}
+
+h1{
+    font-family: 'Stolen';
+    text-align: center;
+    background-color: antiquewhite;
+    width: 300px;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 25%;
+}

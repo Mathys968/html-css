@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <link rel="stylesheet" href="bro.css">
+</head>
+<body>
+    
+    <input type="number" name="bro" id="ibro">
+    <input type="number" name="bra" id="ibra">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="resu">Resultado: </div>
+    <script>
+
+    function somar(){
+       var ibro = document.getElementById('ibro')
+       var ibra = document.querySelector('input#ibra')
+       var resu = document.getElementById('resu')
+        var n1 = Number.parseInt(ibro.value)
+        var n2 =  Number.parseInt(ibra.value)
+        var soma = n1 + n2
+        resu.innerText = ("Resultado: " + soma)
+    }
+
+    
+
+       /*var id = document.getElementById('container')
+        id.addEventListener('click', clicar)
+
+        function clicar(){
+            id = document.getElementById('container')
+            id.innerText = 'Ava'
+            id.style.backgroundColor = 'white'
+        }*/
+    </script>
+</body>
+</html>

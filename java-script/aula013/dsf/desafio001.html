@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSoma</title>
+</head>
+<body>
+    <h1>Soma</h1>
+    <form action="../../Exercicios/ex028/dados.php" method="get">
+        <label for="in1">Digite um número: </label>
+        <input type="number" name="n1" id="in1">
+        <br>
+        <label for="in2">Digite outro número: </label>
+        <input type="number" name="n2" id="in2">
+        <br>
+        <input type="button" value="Soma" onclick="somar()">
+        <div id="resu"></div>
+<script>
+            function somar(){
+                var in1 = document.getElementById('in1')
+                var in2 = document.getElementById('in2')
+                var resu = document.getElementById('resu')
+                var n1 = Number.parseInt(in1.value)
+                var n2 = Number.parseInt(in2.value)
+                var soma = n1 + n2
+                resu.innerText = "A soma de todos os valores é: " + soma
+            }
+        </script>
+    </form>
+</body>
+</html>

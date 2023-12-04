@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContagemAprimorada</title>
+</head>
+<body>
+ <h1>MENU</h1>
+ <p><label for="per"> Digite entre 1 ao 3: </label>
+<input type="number" name="bro" id="ibro">
+</p>
+<input type="button" value="Somar" onclick="escolha()">
+<div id="nm">bro:</div>
+<script>
+    function escolha(){
+        var nm = document.getElementById('nm')
+        var n1 = 1 
+        var n2 = 2
+        n2 <= n1 ? 'n' : 'f'  
+        nm.innerText =n2
+    }
+</script>
+</body>
+</html>
