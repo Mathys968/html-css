@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raios Funde</title>
+</head>
+<body>
+    <h1>QUAL O SEU PAÍS???????</h1>
+    <label for="ipais">Qual o seu país:</label>
+    <input type="text" name="pais" id="ipais" value="Brasil">
+    <input type="button" value="Confirmar" onclick="conf()">
+    <div id="res"></div>
+    <script>
+   function conf(){
+    ipais = document.getElementById('ipais')
+    var res = document.getElementById('res')
+    res.innerText = `O seu país é ${ipais.value}.`
+    if (ipais = res){
+        res.innerText += ' Brasileiro. Meu parça!!!'
+    }
+    else{
+        res.innerText += ' Grindo. Meu Brother!!!!'
+    }
+   }
+    </script>
+</body>
+</html>

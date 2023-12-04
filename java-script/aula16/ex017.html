@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="tvel">Velocidade do carro</label>
+        <input type="number" name="" id="tvel">
+        <input type="button" value="Verificar" onclick="Velocidade()">
+        <div id="res"></div>
+        <script>
+function Velocidade(){
+            var tvel = document.getElementById('tvel')
+            var res = document.getElementById('res')
+            var vel = Number(tvel.value)
+                     res.innerHTML = `Sua velocidade é ${vel} KM/h`
+            if(vel > 60){
+                res.innerHTML += ' Ultrapassou em!' 
+            }
+            else{
+                res.innerHTML += ' Boa jubas'
+            }
+        
+        } 
+
+        </script>
+</body>
+</html>
