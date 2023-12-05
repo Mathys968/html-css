@@ -8,20 +8,22 @@
 <body>
     <h1>QUAL O SEU PAÍS???????</h1>
     <label for="ipais">Qual o seu país:</label>
-    <input type="text" name="pais" id="ipais" value="Brasil">
+    <input type="text" name="pais" id="ipais">
     <input type="button" value="Confirmar" onclick="conf()">
     <div id="res"></div>
     <script>
    function conf(){
-    ipais = document.getElementById('ipais')
-    var res = document.getElementById('res')
-    res.innerText = `O seu país é ${ipais.value}.`
-    if (ipais = res){
-        res.innerText += ' Brasileiro. Meu parça!!!'
+    var ipais = document.getElementById("ipais").value
+
+    var res = document.getElementById("res")
+    res.innerText = `O seu país é ${ipais}. `
+    if(ipais == 'Brasil'){
+       res.innerText += ('Você é Brasileiro. Meu PARÇA!!!!')
     }
     else{
-        res.innerText += ' Grindo. Meu Brother!!!!'
+        res.innerText += ('Você é Gringo. Meu BROTHER!!!!')
     }
+    
    }
     </script>
 </body>
