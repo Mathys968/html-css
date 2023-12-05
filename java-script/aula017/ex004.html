@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else if</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes name{
+            10%{box-shadow: 5px 5px 5px yellow;
+            background-color: greenyellow;}
+            20%{box-shadow: 10px 10px 10px red;
+            background-color: gold;}
+            30%{box-shadow: 15px 15px 15px green;
+            background-color: blueviolet;}
+            40%{box-shadow: 20px 20px 20px blue;
+            background-color: brown;}
+            50%{box-shadow: 25px 25px 25px violet;
+            background-color: brown;}
+            60%{box-shadow: 30px 30px 30px rosybrown;
+            background-color: rosybrown;}
+            70%{box-shadow: 35px 35px 35px brown;
+            background-color: blue;}
+            80%{box-shadow: 40px 40px 40px blueviolet;
+            background-color:green ;}
+            90%{box-shadow: 45px 45px 45px gold;
+            background-color: red;}
+            100%{box-shadow: 50px 50px 50px greenyellow;
+            background-color:yellow ;}
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            background: darkgray;
+            width: 200px;
+            height: 50px;
+            margin: auto;
+            margin-top: 25%;
+            padding-top: 10px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.651);
+            box-shadow: 2px 2px 2px white;
+            animation-name: name;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        label{
+            color: white;
+            margin-left: 10px;
+            animation-name: name;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        input#gam1{
+            animation-name: name;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        input.bt{
+            margin-left: 150px;
+            margin-top: 50px;
+            font-size: 20px;
+            padding: 10px;
+            animation-name: name;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    
+        div#res{
+            margin-left: 20px;
+            margin-top: 50px;
+            font-size: 20px;
+            padding: 20px;
+            width: 400px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            animation-name: name;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>GAMEEER</h1>
+    <br>
+<form action=""> 
+    <label for="gam1">Quantas horas você jogou OMORI?</label>
+    <input type="number" name="gam" id="gam1">
+    <input type="button" value="VEREMOS" class="bt" onclick="veremos()">
+</form>
+   <div id="res"></div>
+   <script>
+    function veremos(){
+        var gam1 = document.getElementById("gam1")
+        var valor = Number.parseInt(gam1.value)
+        var res = document.getElementById("res")
+        res.innerText = `Você jogou exatamente ${valor} horas. `
+        switch(valor){
+            case 0: res.innerText += " Jogou nada..."
+            break
+            case 1: res.innerText += " Jogou pouco..."
+            break
+            case 2: res.innerText += " Deveria continuar jogando."
+            break
+            case 3: res.innerText += " Está gostando do jogo?"
+            break
+            case 4: res.innerText += " Está quase terminando!!"
+            break
+            case 5: res.innerText += " Está chegando na melhor parte!!"
+            break
+            case 6: res.innerText += " JOGÃO!!!!!!!!!!!!!!!"
+            break
+            default: res.innerText += " PLATINOU, AMASSO, REJOGOU, NICE."
+        }
+    }
+   </script>
+</body>
+</html>
