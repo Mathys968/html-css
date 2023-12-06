@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        input#cont{
+            color: green;
+        }
+
+        div#bru{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTADOR</h1>
+    <form action="../../Exercicios/ex028/dados.php" method="get">
+        <label for="cont">FAÇA SUA ESCOLHA</label>
+    <input type="number" name="con" id="cont">
+    <input type="button" value="enviar" onclick="contar()">
+    <div id="cont"> "[1] De 1 a 10"<br>
+      "[2] De 10 a 1"<br>
+       "[3] Sair"</div>
+       <div id="bru"></div>
+    <script>
+        function contar(){
+        var cont = document.getElementById('cont')
+        var valor = Number(cont.value)
+        var ES1 = 1
+        var ES2 = 11
+        var bru = document.getElementById('bru')
+        bru.innerText = `Estou contando de` 
+         if(valor == 1){
+            valor = ES1
+            while(valor <= 10){
+               bru.innerText += valor++
+            }         
+         }
+         else if(valor == 2){
+            valor = ES2
+            while(valor > 1){
+bru.innerText += valor = valor - 1
+            }
+         }
+         else{
+            bru.style.backgroundColor = "rose"
+            bru.innerText += " Adeus...."
+            
+         }
+        }
+    </script>
+</form>
+</body>
+</html>

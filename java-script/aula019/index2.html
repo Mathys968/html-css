@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: cadetblue;
+        }
+
+        h1{
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.274);
+        }
+        ol{
+            margin:50px 0px 0px 50px;
+            background-color: white;
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        li{
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+            transform: scale(1.0);
+        }
+
+        li:hover{
+            transform: scale(1.05);
+            transition-delay: 0.05s;
+            cursor: pointer;
+        }
+
+        button{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SELETOR DE PESSOAS</h1>
+    <form action="dados.php">
+    <label for="text1">Qual o seu Sexo?</label>
+    <input type="text" name="cl" id="text1">
+    <input type="button" value="Confirmar" onclick="Sexo()">
+    <br>
+    <label for="text2">Qual o sua Idade?</label>
+    <input type="number" name="cl" id="text2">
+    <input type="button" value="Confirmar" onclick="Idade()">
+
+    <ol>
+        <li>Preto</li>
+        <li>Castanho</li>
+        <li>Loiro</li>
+        <li>Ruivo</li>      
+    </ol>
+    <label for="text">Qual a cor do de Cabelo?</label>
+<input type="text" name="text" id="text">
+<input type="button" value="Confirmar" onclick="Cabelo()">
+</form>
+<div id="valor"></div>
+    <script>
+     function Sexo(){
+        function Idade(){
+            function Cabelo(){
+        var Sexo = document.getElementById('text1').value
+        var Idade = document.getElementById(Number.parseInt(text2))  
+        var Cabelo = document.getElementById('text')
+        var valor = document.getElementById('valor')
+        var qtd = 0
+        valor.innerText = `Tem ${qtd} Homem,com 18 anos e cabelo preto`
+        if(Sexo == "M" && Idade == "18" && Cabelo == "Preto"){
+            Sexo = qtd
+            Idade = qtd
+            Cabelo = qtd
+            do{
+                qtd++
+                valor.innerText += qtd
+            }while(Sexo == "M" && Idade == "18" && Cabelo == "Preto")
+        }  
+            }
+        }
+
+     }
+    </script>
+</body>
+</html>
