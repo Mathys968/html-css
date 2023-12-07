@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="n1" id="n">
+    <br>
+    <input type="text" name="te" id="te1">
+    <br>
+    <input type="text" name="tex" id="tex1">
+    <br>
+    <input type="button" value="Confi" onclick="confi()">
+    <div id="bru"></div>
+    <script>
+function confi(){
+    var n = document.getElementById('n')
+    var v = Number(n.value)
+    var t1 = document.getElementById('te1').value
+    var t2 = document.getElementById('tex1').value
+    var bru = document.getElementById('bru')
+    if(v <= 10 && t1 == "M" && t2 == "loiro"){
+        for(var v; v<= 10; v++){
+                bru.innerText == v
+        }
+    }
+}
+    </script>
+</body>
+</html>
