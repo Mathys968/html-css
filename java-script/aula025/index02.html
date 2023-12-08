@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlario</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: rgb(67, 192, 250);
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px;
+            color: white;
+        }
+
+        section{
+            background-color: white;
+            width: 400px;
+            height: 120px;
+            padding: 10px;
+            margin: 30px auto;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <form action="dados.php" method="post">
+        <label for="Idade">Ano de nascimento:</label>
+        <input type="number" name="idade" id="Idade">
+        <br>
+        <label for="Sexo">Sexo:</label>
+        <input type="radio" name="Masc" id="Mascu" value="Masculino">Masculino
+        <input type="radio" name="Masc" id="Femini" value="Feminino">Feminino
+        <br>
+        <input type="button" value="Verificar" onclick="Nasc()">
+        </form>
+        <br>
+        <p id="text">Preencha os dados acima para ver o resultado!</p>
+        <script>
+            function Nasc(){
+            var dade = document.getElementById('Idade')
+            var idade = Number(dade.value)
+            var Masc = document.getElementById('Mascu')
+            var Femi = document.getElementById('Femini')
+            var tex = document.getElementById('text').value
+            var no = new Date()
+            var ano = no.getFullYear()
+            if(ano > idade){
+                idade = ano - idade
+                tex.sinnerText = `Você tem ${idade} de idade"`
+            }
+            }
+        </script>
+    </section>
+</body>
+</html>

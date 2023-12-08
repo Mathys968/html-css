@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<style>
+    *{
+        padding:0px;
+        margin:0px; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background-color: rgb(243, 221, 191);
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        margin: 40px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.253);
+    }
+
+    p{
+        font-size: 20px;
+        text-align: center;
+        flex-basis: 20px;
+        margin-bottom: 30px;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        align-self: center;
+    }
+</style>
+<body id="Cor">
+    <h1 id="msg">Error</h1>
+    <div id="tempo">
+        <p>Error</p>
+        <img src="img1/" alt="manhã" id="image">
+    </div>
+
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var tempo = document.getElementById('tempo')
+        var image = document.getElementById('image')
+        var msg = document.getElementById('msg')
+        var cor = document.body
+        if(hora < 12){
+            msg.innerHTML = 'Hora do Dia'
+            document.querySelector('div > p').innerHTML = `Agora são ${hora} horas`
+            image.src = "img1/transferir (1).jpg"
+    } else if(hora < 18){
+        cor.style.backgroundColor = 'brown'
+        msg.innerHTML = 'Hora da Tarde'
+            document.querySelector('div > p').innerHTML = `Agora são ${hora} horas`
+            image.src = 'img1/transferir.jpg'
+        }else{
+            cor.style.backgroundColor = 'darkgray'
+            msg.innerHTML = 'Hora da Noite'
+            document.querySelector('div > p').innerHTML = `Agora são ${hora} horas`
+            image.src = "img1/aurora-1197753_640.jpg"
+        }
+    </script>
+</body>
+</html>
