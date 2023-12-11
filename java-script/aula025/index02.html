@@ -24,11 +24,18 @@
         section{
             background-color: white;
             width: 400px;
-            height: 120px;
+            height: auto;
             padding: 10px;
             margin: 30px auto;
             border-radius: 10px;
-            
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+        }
+        img{
+            display: none;
+            margin: auto;
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
         }
     </style>
 </head>
@@ -40,31 +47,80 @@
     <section>
         <form action="dados.php" method="post">
         <label for="Idade">Ano de nascimento:</label>
-        <input type="number" name="idade" id="Idade">
+        <input type="number" name="n" id="Idade">
         <br>
         <label for="Sexo">Sexo:</label>
-        <input type="radio" name="Masc" id="Mascu" value="Masculino">Masculino
-        <input type="radio" name="Masc" id="Femini" value="Feminino">Feminino
+        <input type="radio" name="Masc" id="Mascu" value="Masculino"><label for="Mascu">Masculino</label>
+        <input type="radio" name="Masc" id="Femini" value="Feminino"><label for="Femini">Feminino</label>
         <br>
         <input type="button" value="Verificar" onclick="Nasc()">
         </form>
         <br>
-        <p id="text">Preencha os dados acima para ver o resultado!</p>
+            
+            <p id="text">Preencha os dados acima para ver o resultado!
+            </p>
+            <img src="" alt="" id="img"> 
+        </section>
+
         <script>
             function Nasc(){
-            var dade = document.getElementById('Idade')
-            var idade = Number(dade.value)
-            var Masc = document.getElementById('Mascu')
-            var Femi = document.getElementById('Femini')
-            var tex = document.getElementById('text').value
             var no = new Date()
             var ano = no.getFullYear()
-            if(ano > idade){
-                idade = ano - idade
-                tex.sinnerText = `Você tem ${idade} de idade"`
+            var dade = document.getElementById('Idade')
+            var idade = Number(dade.value)
+            if(idade == 0 || idade > ano){
+                window.alert('ERRO///ERRO')
+            }
+            var Sexo = document.getElementsByName('Masc')
+            var gênero = ''
+            var idade =  ano - idade
+            var texto = document.getElementById('text')
+            if(Sexo[0].checked){
+                gênero = "Homem"
+            } else if(Sexo[1].checked){
+                gênero = "Mulher"
+            } else{
+                window.alert('O seu Sexo não foi marcado')
+            } 
+            var imagem = document.querySelector('img#img')
+            if(idade <= 17 && gênero == 'Homem'){
+            texto.innerText = `Detectamos um ${gênero} com ${idade} anos`
+            texto.style.textAlign = 'center' 
+            imagem.style.display = 'block'
+            imagem.src = "img2/transferir.jpg"
+        }else if(idade <= 59 && gênero == 'Homem'){
+            texto.innerText = `Detectamos um ${gênero} com ${idade} anos`
+            texto.style.textAlign = 'center'
+            imagem.src = "img2/transferir (3).jpg"
+            imagem.style.display = 'block'
+            } 
+            else if(idade <= 3000 && gênero == 'Homem'){
+            texto.innerText = `Detectamos um ${gênero} com ${idade} anos`
+            texto.style.textAlign = 'center'
+            imagem.src = "img2/transferir (4).jpg"
+            imagem.style.display = 'block'
+            }
+            else if(idade <= 17 && gênero == 'Mulher'){
+            texto.innerText = `Detectamos um ${gênero} com ${idade} anos`
+            texto.style.textAlign = 'center' 
+            imagem.style.display = 'block'
+            imagem.src = "img2/transferir (1).jpg"
+            }else if(idade <= 59 && gênero == 'Mulher'){
+            texto.innerText = `Detectamos um ${gênero} com ${idade} anos`
+            texto.style.textAlign = 'center'
+            imagem.src = "img2/transferir (2).jpg"
+            imagem.style.display = 'block'
+            } 
+            else{
+            texto.innerText = `Detectamos um ${gênero} com ${idade} anos`
+            texto.style.textAlign = 'center'
+            imagem.src = "img2/transferir (5).jpg"
+            imagem.style.display = 'block'
             }
             }
+           
+            
         </script>
-    </section>
+    
 </body>
 </html>

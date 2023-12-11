@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color:rgb(109, 0, 36) ;
+        }
+
+        h1{
+            color:#FFF;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form{
+            margin: auto;
+            margin-top: 20px;
+            background-color: white;
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(251, 255, 0, 0.336);
+        }
+
+        #res{
+            display:flex; 
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos contar</h1>
+    <form action="get">
+
+    <p>
+        <label for="ini">Inicio:</label>
+        <input type="number" name="in" id="ini">
+    </p>
+    <br>
+    <p>
+        <label for="fim">Fim:</label>
+        <input type="number" name="fi" id="fim">
+    </p>
+    <br>
+    <p>
+        <label for="passo">Passo:</label>
+        <input type="number" name="pas" id="passo">
+    </p>
+    <br>
+    <input type="button" value="Contar" onclick="Contar()">
+    <div id="res">Preparando contagem</div>
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+
+
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+
+    <audio src="https://rr4---sn-bg07dnrl.googlevideo.com/videoplayback?expire=1702350659&ei=43p3ZdmkDf6Ci9oPpKi6kAU&ip=2a01%3A4f8%3A242%3A449c%3A%3A2&id=o-AEaw6h8oljih-lanjR64oI7COvMJxnyqWNnpeKAc_wuq&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=200214343&dur=12371.150&lmt=1699588170385166&keepalive=yes&fexp=24007246&c=IOS&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ANLwegAwRAIgfHnf418OMdpYRfSmhd8qhntCU56swIdkRV3mSIIo2CwCIHfC25hduiHy7XIHjY9bYvFPlfL7jNdWN70GHYLzuWrq&title=Phonk+Music+2023+%E2%80%BB+Aggressive+Drift+Phonk+%E2%80%BB+%D0%A4%D0%BE%D0%BD%D0%BA+2023&redirect_counter=1&rm=sn-4g5ekd7l&req_id=f28760192c62a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=PI&mip=191.222.30.129&mm=31&mn=sn-bg07dnrl&ms=au&mt=1702329008&mv=u&mvi=4&pl=18&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AM8Gb2swRAIgAeCGbFsVU4p_UoWmwNTZU0yV8olxx7-63HNF-tSJ-yACIGb16zOo2xk_UAV1vNHWqMa1eh0ZkHvBC74isAxKKLNe" controls id="audio"></audio>
+</form>
+
+    <script src="index.js">
+    </script>
+</body>
+</html>
