@@ -1,9 +1,9 @@
 function Calcular(){
     let nume = document.getElementById('num')
     num = Number(nume.value)
-    if(num == '0'){
+    if(num == ''){
         window.alert('OUOUOUOUO')
-    }
+    }else{
     var c = 1
     var bro = document.getElementById('bro')
     var res = 0
@@ -14,5 +14,5 @@ function Calcular(){
     bro.innerHTML+= `A multicação entre ${num}*${c} é = ${res}\n`
     c++
 }while(c<=10)
-
+    }
 }
