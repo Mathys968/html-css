@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino 001</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: thistle;
+        }
+
+        @keyframes ani{
+            10%{box-shadow: 5px 5px 5px yellow;
+            background-color: greenyellow;}
+            20%{box-shadow: 10px 10px 10px red;
+            background-color: gold;}
+            30%{box-shadow: 15px 15px 15px green;
+            background-color: blueviolet;}
+            40%{box-shadow: 20px 20px 20px blue;
+            background-color: brown;}
+            50%{box-shadow: 25px 25px 25px violet;
+            background-color: brown;}
+            60%{box-shadow: 30px 30px 30px rosybrown;
+            background-color: rosybrown;}
+            70%{box-shadow: 35px 35px 35px brown;
+            background-color: blue;}
+            80%{box-shadow: 40px 40px 40px blueviolet;
+            background-color:green ;}
+            90%{box-shadow: 45px 45px 45px gold;
+            background-color: red;}
+            100%{box-shadow: 50px 50px 50px greenyellow;
+            background-color:yellow ;}
+        }
+        h1{
+            background-color: white;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+            width: 400px;
+            height: 40px;
+            margin:auto;
+            margin-top: 20px;
+            padding: 7px;
+            text-align: center;
+            animation-name: ani;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        section{
+            background-color: white;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+            width: 400px;
+            height: 210px;
+            margin:auto;
+            padding: 10px;
+            margin-top: 20px;
+            animation-name: ani;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        ol{
+            background-color: white;
+            width: 80px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 0px 20px;
+            list-style-type: lower-latin;
+        }
+
+        li{
+            
+            background-color: white;
+            
+        }
+
+        #res, #ret{
+            animation-name: ani;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SELETOR DE PESSOAS</h1>
+    </header>
+
+    <section>
+        <form action="dados.php">
+        <p>
+            <p>Qual o seu Sexo?</p>
+            <input type="radio" name="name" id="masc"><label for="masc">Masculino</label>
+            <input type="radio" name="name" id="femi"><label for="femi">Feminino</label>
+        </p>
+        <br>
+        <p>
+            <label for="idade">Qual o sua Idade?</label>
+                <input type="number" name="ds" id="idade">
+        </p>
+        <br>
+        <p>
+            <label for="cabelo">Qual a cor do de Cabelo?</label>
+                <input type="text" value="" name="text" id="cabelo">
+        </p>
+        <p>
+            <ol type="I">
+                <li>Preto</li>
+                <li>Castanho</li>
+                <li>Loiro</li>
+                <li>Ruivo</li>
+            </ol>
+        </p>
+        <br>
+    <input type="button" value="Confirmar" onclick="Confirmar()">
+    </form>
+    <p id="res"></p>
+    <br>
+    <p id="ret"></p>
+        </form>
+    </section>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
