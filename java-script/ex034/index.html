@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjunto</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+
+        h1{
+        border: 1px solid white;
+        text-align: center;
+        margin: auto;
+        width: 400px;
+        }
+
+        section{
+            border: 1px solid white;
+            margin: auto;
+            width: 400px;
+            margin-top: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conjunto</h1>
+    <section>
+        <form action="get">
+            <p>
+                <label for="sex">Qual o seu sexo:</label>
+                <input type="radio" name="sex" id="masc"> <label for="masc">Masculino:</label>
+                <input type="radio" name="sex" id="femi"> <label for="femi">Feminino</label>
+            </p>
+
+               <p>
+                <label for="alt">Qual sua altura: </label>
+                <input type="number" name="al" id="alt">
+               </p> 
+
+               <input type="button" value="Enviar" onclick="Enviar()">
+
+        </form>
+        <p id="res"></p>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
