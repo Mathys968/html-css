@@ -1,23 +1,39 @@
 
 function Conf(){
 let totalAlu = document.querySelector('input#totA')
-let cont = 1
 let numDeAlun = document.getElementById('numDeAlun')
-
-if(cont <= Number(totalAlu.value)){
-   while(cont <= Number(totalAlu.value)){
-numDeAlun.innerHTML += `ALUNO ${cont} <br> <p>Nome do Aluno: <input type="text" name="nom" id="nome"> <br>" <input type="button" value="Confirmar" id="bro" onclick="Conti()">>
-<p id="res"></p>`
-cont++
-} 
-
-}
-
-}
-function Conti(){
 let nome = document.getElementById('nome')
-let qtd = []
-let res = document.getElementById('res')
-qtd.push(nome.value)
-res.innerHTML += `Nota de ${nome.value}`
+let name = []
+let nota = document.getElementById('nota')
+for(let cont = 1; cont <= Number(totalAlu.value); cont++){
+numDeAlun.innerHTML += 
+`ALUNO ${cont} <br> 
+<section id="BACK">
+   
+   <form action="post">
+   
+      <p> <label for="nome">Nome do Aluno: </label>
+      <input type="text" name="nom" id="nome"> </p>
+   
+      <p> <label for="nota">Nota do Aluno :</label>
+       <input type="text" name="not" id="nota"></p>
+
+      </form>
+      
+      </section>`
+
 }
+numDeAlun.innerHTML += nome
+}
+
+  
+
+function Conti(){ 
+let nome = document.getElementById('nome')
+
+let res = document.getElementById('res')
+ if(nome.value){
+   res.innerHTML += `Nota de ${nome.value}`
+   nome.innerHTML += ''
+ }
+   }
