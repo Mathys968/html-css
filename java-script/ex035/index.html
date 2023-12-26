@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="get">
+        <p>
+            <label for="hp">Altura da Parede</label>
+             <input type="number" name="ate" id="hp">
+        </p>
+        <p>
+            <label for="lp">Largura da Parede</label>
+             <input type="number" name="lte" id="lp">
+        </p>
+        <p>
+            <label for="ha"> Altura do Azulejo</label>
+             <input type="number" name="hy" id="ha">
+        </p>
+        <p>
+            <label for="la">Largura do Azulejo</label>
+             <input type="number" name="ly" id="la">
+        </p>
+        <input type="button" value="Adicionar" onclick="Adici()">
+        <input type="reset" value="Resetar">
+    </form>
+   
+    <div id="res"></div>
+    <script src="index.js"></script>
+
 </body>
 </html>
