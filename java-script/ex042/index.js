@@ -1,9 +1,10 @@
 let num = [2, 3, 12, 12, 32]
 function Media(vum){
-    let s = 0
-for(vum; vum <= num.length; vum++){
-    s += num[vum]
-    return s
+   
+    for(let pos in num){
+        vum += num[pos]
+    }
+    let tamanho = vum/num.length
+    console.log(`A média dos números no Array será ${tamanho}`)
 }
-}
-console.log(Media())
+console.log(Media(0))
