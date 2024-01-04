@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar</title>
+    <style>
+        body{
+            background-color: red;
+        }
+
+
+        div{
+    text-align: center;
+}
+
+        h1{
+            background-color: rgb(61, 58, 58);
+            color: white;
+            width: auto;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            letter-spacing: 3px;
+            margin: auto;
+            margin-top: 250px;
+        }
+
+        button{
+            background-color: red;
+            color: black;
+            border: 2px solid rgb(50, 139, 255);
+            margin-top: 30px;
+            border-radius: 3px;
+            padding: 8px 15px;
+            font-size: large;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        button:active{
+            transform: scale(0.80);
+        }
+        span{
+            color: rgb(50, 139, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Background Color: <span id="text">Red</span>
+        </h1>
+        <button type="button" id="butão" onclick="Cores()">CLICK ME</button>
+    </div>
+
+    <script src="cores.js"></script>
+</body>
+</html>
