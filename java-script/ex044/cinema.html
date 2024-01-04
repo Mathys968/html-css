@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cinema</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: -10px;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin-top: 7px;
+            background: red;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>CINEMA</h1>
+    <section>
+        <div id="cadeiras">
+            <input type="radio" name="as" id="cadei">
+            <label for="cadei">A1</label>
+        </div>
+
+
+
+
+        <div id="cadeira">A2</div>
+        <div id="cadeira">A3</div>
+        <div id="cadeira">A4</div>
+        <div id="cadeira">B1</div>
+        <div id="cadeira">B2</div>
+        <div id="cadeira">B3</div>
+        <div id="cadeira">B4</div>
+        <div id="cadeira">C1</div>
+        <div id="cadeira">C2</div>
+        <div id="cadeira">C3</div>
+        <div id="cadeira">C4</div>
+        <div id="cadeira">D1</div>
+        <div id="cadeira">D2</div>
+        <div id="cadeira">D3</div>
+        <div id="cadeira">D4</div>
+        <div id="cadeira">E1</div>
+        <div id="cadeira">E2</div>
+        <div id="cadeira">E3</div>
+        <div id="cadeira">E4</div>
+    </section>
+    <input type="button" value="Finalizar" onclick="Finalizar()">
+
+    <script src="cine.js"></script>
+
 </body>
 </html>
